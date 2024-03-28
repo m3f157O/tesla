@@ -1,2 +1,3 @@
-![images/image2.png](images/2 (2).png)
+# **1st stage**
 
+![images/image1.png](images/image1.png)

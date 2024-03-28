@@ -19,8 +19,9 @@ In this document, we will take a deep dive into steps the malware takes to execu
 Some of these significant features include:
 
 - Use of AES256 encryption in javascript using "RijindaelManaged" .NET encryption module
-- Use of images to hide base64 encoded .NET PEs
+- Use of PNG images to hide base64 encoded .NET PEs
 - Use of **fileless loader** in the infection chain helps the IoC's threat to be undiscovered.
+- Acquisition and exfiltration of credentials from web browsers, applications and extensive system enumeration related to hardware capabilities and current user activities
 - **Process Hollowing** has been implemented in the final stages of the loader, wherein the code of RegAsm.exe is replaced with the payload associated with Tesla.
 
 # **1st stage**

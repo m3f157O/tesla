@@ -66,7 +66,6 @@ Full list of applications here
 ![images/ev_10.png](images/ev_10.png)
 ![images/ev_11.png](images/ev_11.png)
 ![images/ev_12.png](images/ev_12.png)
-## Persistence
 
 
 # **Configuration**

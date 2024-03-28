@@ -69,5 +69,8 @@ Full list of applications here
 
 
 # **Configuration**
+The malware has the capability of exfiltrating data via SMTP. Moreover, the configuration hints at a persistence mechanism as well.
 ![images/ev_9.png](images/ev_9.png)
+
+# **IOCs**
 

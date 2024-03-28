@@ -39,9 +39,9 @@ After the decryption process, the Powershell script is executed through Wscript.
 
 # **3rd stage**
 
-The purpose of the Powershell script is to download an image, find the placeholders <BASE64_START> and <BASE64_END>, and decode the base64 value embedded in the images. This would be a valid .NET PE, which would be loaded in-memory thanks to Powershell Reflection
+The purpose of the Powershell script is to download an image, find the placeholders <BASE64_START> and <BASE64_END>, and decode the base64 value embedded in the images. This would be a valid .NET DLL, which would be loaded in-memory thanks to Powershell Reflection
 ![images/ev_4.png](images/ev_4.png)
-
+The method loaded and executed from the DLL receives four arguments, which will be used to perform operations later.
 ![images/ev_5.png](images/ev_5.png)
 
 # **4th stage**

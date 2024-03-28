@@ -27,11 +27,11 @@ Some of these significant features include:
 The initial javascript payload is started from a document. In this specific case, an excel document created a wscript process executing the following javascript code:
 ![images/ev_1.png](images/ev_1.png)
 
-In this case, an URL is istantiated to retrieve more javascript code, to be executed in memory using the "eval" function. The downloaded script will perform the decryption of an hardcoded encrypted value, which would be a Powershell script.
+In this case, an URL is istantiated in the variable "restribar" to retrieve more javascript code, to be executed in memory using the "eval" function. The downloaded script will perform the decryption of an hardcoded encrypted value, which would be a Powershell script.
 
 # **2nd stage**
 
-The payload is obfuscated thanks to RijindaelManaged, a .NET cryptography module. All the configuration for the cryptor, along with the key, is stored in the code.
+The payload is encoded in base64 and obfuscated thanks to RijindaelManaged, a .NET cryptography module. All the configuration for the cryptor, along with the key, is stored in the code.
 ![images/ev_2.png](images/ev_2.png)
 ![images/ev_3.png](images/ev_3.png)
 After the decryption process, the Powershell script is executed through Wscript.exe
@@ -45,7 +45,9 @@ The method loaded and executed from the DLL receives four arguments, which will 
 ![images/ev_5.png](images/ev_5.png)
 
 # **4th stage**
-![images/ev_6.png](images/ev_6.png)
+The second argument is a numeric value used as a flag, in this case to decide wether to install a persistence 
+![images/ev_6.png](images/ev_6.png) 
+The start routine receives the third and fourth arguments, a path and a filename. All the javascript files in the run-directory of the executable are copied in the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run 
 ![images/ev_7.png](images/ev_7.png)
 ![images/ev_8.png](images/ev_8.png)
 

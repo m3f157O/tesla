@@ -47,7 +47,7 @@ The method loaded and executed from the DLL receives four arguments, which will 
 # **4th stage**
 The second argument is a numeric value used as a flag, in this case to decide wether to install a persistence. Then, data is downloaded from the valid url obtained by reversing the first argument. This data is a reversed base64, and if decoded, it can be confirmed that it is a valid .NET PE file. The routine Tools.Ande performs a process hollowing operation, by creating the suspended process *C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe*
 ![images/ev_6.png](images/ev_6.png) 
-The start routine receives the third and fourth arguments, a path and a filename. All the javascript files in the run-directory of the executable are copied in the *HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run*
+The start routine receives the third and fourth arguments, a path and a filename. All the javascript files in the run-directory of the executable are copied in the *HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run* (T1547.001)
 ![images/ev_7.png](images/ev_7.png)
 The process hollowing is performed in a classic way
 ![images/ev_8.png](images/ev_8.png)
@@ -55,8 +55,11 @@ The process hollowing is performed in a classic way
 
 # **5th stage**
 The main features include browser password stealing, keylogging, screenshots near the cursor, and many other application credential stealing, as well as extensive enumerating of the system resources and available devices.
-![images/ev_9.png](images/ev_9.png)
 ![images/ev_10.png](images/ev_10.png)
 ![images/ev_11.png](images/ev_11.png)
 ![images/ev_12.png](images/ev_12.png)
 ![images/ev_13.png](images/ev_13.png)
+
+# **Configuration**
+![images/ev_9.png](images/ev_9.png)
+

@@ -27,10 +27,11 @@ Some of these significant features include:
 The initial javascript payload is started from a document. In this specific case, an excel document created a wscript process executing the following javascript code:
 ![images/ev_1.png](images/ev_1.png)
 
-In this case, an URL is istantiated to retrieve more javascript code, to be executed in memory using the "eval" function.
+In this case, an URL is istantiated to retrieve more javascript code, to be executed in memory using the "eval" function. The downloaded script will perform the decryption of an hardcoded encrypted value, which would be a Powershell script.
 
 # **2nd stage**
 
+The payload is obfuscated thanks to RijindaelManaged, a .NET cryptography module. All the configuration for the cryptor, along with the key, is stored in the code.
 ![images/ev_2.png](images/ev_2.png)
 ![images/ev_3.png](images/ev_3.png)
 

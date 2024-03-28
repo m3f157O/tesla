@@ -27,7 +27,7 @@ Some of these significant features include:
 The initial javascript payload is started from a document. In this specific case, an excel document created a wscript process executing the following javascript code:
 ![images/ev_1.png](images/ev_1.png)
 
-In this case, an URL is istantiated to retrieve more javascript code, to be executed in memory with the "eval" function.
+In this case, an URL is istantiated to retrieve more javascript code, to be executed in memory using the "eval" function.
 
 # **2nd stage**
 

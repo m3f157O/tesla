@@ -69,7 +69,7 @@ Full list of applications here
 
 
 # **Configuration**
-The malware has the capability of exfiltrating data via SMTP. Moreover, the configuration hints at a persistence mechanism as well.
+The malware has the capability of exfiltration via SMTP. Moreover, the configuration hints at a persistence mechanism as well.
 ![images/ev_9.png](images/ev_9.png)
 
 # **IOCs**
@@ -92,6 +92,7 @@ The malware has the capability of exfiltrating data via SMTP. Moreover, the conf
 - stage 5 agent
 *dc4e0712ab9dca9a6c457a83cfe0d30128d9b85c2aa8d7ed0d977da335dc3b80*
 
+# **Domains**
 - stage 2 url: https://paste[.]ee/d/fq6Ny
 - image url: https://uploaddeimagens[.]com.br/images/004/731/991/original/new_image.jpg?1707144482
 - agent url: (reversed base64encode) http://93.123.39.145/14.txt

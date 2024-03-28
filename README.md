@@ -74,3 +74,26 @@ The malware has the capability of exfiltrating data via SMTP. Moreover, the conf
 
 # **IOCs**
 
+- stage 1
+*3007400ade8d88cb583d9eeabc1cd9d4d6f5d814e595aad226d46f04b3b7ffe3*
+
+- stage 2 
+*7390f1a9170a68b7155c60e2cf7c7d1879b60dc5e07d03d1a340af7c12d8efbf*
+
+- stage 3 image
+*53e8b36becd5610d9a7a8d9a78b713224ce04f3740b3461564dbd5c364c5dc35*
+
+- stage 3 powershell
+*5d186be07869bf5ddd08bf9f5b32b163235b7904aa9f26f1a7da9c5f4befff10*
+
+- stage 4 loader
+*39fb28ee2f1596faede940c5774b4b216f311718d51f334c4c11a63eb4c078337*
+
+- stage 5 agent
+*dc4e0712ab9dca9a6c457a83cfe0d30128d9b85c2aa8d7ed0d977da335dc3b80*
+
+- stage 2 url: https://paste[.]ee/d/fq6Ny
+- image url: https://uploaddeimagens[.]com.br/images/004/731/991/original/new_image.jpg?1707144482
+- agent url: (reversed base64encode) http://93.123.39.145/14.txt
+	
+

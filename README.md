@@ -45,7 +45,7 @@ The method loaded and executed from the DLL receives four arguments, which will 
 ![images/ev_5.png](images/ev_5.png)
 
 # **4th stage**
-The second argument is a numeric value used as a flag, in this case to decide wether to install a persistence. Then, data is downloaded from the valid url obtained by reversing the first argument. This data is a reversed base64, and if decoded, it can be confirmed that it is a valid .NET PE file. The routine Ande.Tools performs a process hollowing operation, by creating the suspended process *C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe*
+The second argument is a numeric value used as a flag, in this case to decide wether to install a persistence. Then, data is downloaded from the valid url obtained by reversing the first argument. This data is a reversed base64, and if decoded, it can be confirmed that it is a valid .NET PE file. The routine Tools.Ande performs a process hollowing operation, by creating the suspended process *C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegAsm.exe*
 ![images/ev_6.png](images/ev_6.png) 
 The start routine receives the third and fourth arguments, a path and a filename. All the javascript files in the run-directory of the executable are copied in the *HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run*
 ![images/ev_7.png](images/ev_7.png)

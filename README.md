@@ -14,6 +14,14 @@ Agent Tesla is a .Net-based Remote Access Trojan (RAT) and data stealer for gain
 
 # **Key points**
 
+In this document, we will take a deep dive into steps the malware takes to execute the payload through these layers, as well as the various techniques it employs to hinder and slow down the analysis process.
+
+Some of these significant features include:
+
+- Use of AES256 encryption in javascript using "RijindaelManaged" .NET encryption module
+- Use of images to hide base64 encoded .NET PEs
+- Use of **fileless loader** in the infection chain helps the IoC's threat to be undiscovered.
+- **Process Hollowing** has been implemented in the final stages of the loader, wherein the code of RegAsm.exe is replaced with the payload associated with Tesla.
 
 # **1st stage**
 ![images/ev_1.png](images/ev_1.png)

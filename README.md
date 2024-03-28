@@ -56,17 +56,18 @@ The process hollowing is performed in a classic way
 # **5th stage**
  
 ## Keylogging
-screenshots near the cursor
+![images/ev_13.png](images/ev_13.png)
 ## Microsoft vault password stealing
+![images/ev_14.png](images/ev_14.png)
 ## Application credential stealing
-## Browser password stealing,
+Full list of applications here
+![images/ev_14.png](images/ev_14.png)
 ## System enumeration
-## Persistence
-
 ![images/ev_10.png](images/ev_10.png)
 ![images/ev_11.png](images/ev_11.png)
 ![images/ev_12.png](images/ev_12.png)
-![images/ev_13.png](images/ev_13.png)
+## Persistence
+
 
 # **Configuration**
 ![images/ev_9.png](images/ev_9.png)

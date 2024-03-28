@@ -61,7 +61,7 @@ The process hollowing is performed in a classic way
 ![images/ev_14.png](images/ev_14.png)
 ## Application credential stealing
 Full list of applications here
-![images/ev_14.png](images/ev_14.png)
+![images/ev_15.png](images/ev_15.png)
 ## System enumeration
 ![images/ev_10.png](images/ev_10.png)
 ![images/ev_11.png](images/ev_11.png)

@@ -54,3 +54,9 @@ The process hollowing is performed in a classic way
 
 
 # **5th stage**
+The main features include browser password stealing, keylogging, screenshots near the cursor, and many other application credential stealing, as well as extensive enumerating of the system resources and available devices.
+![images/ev_9.png](images/ev_9.png)
+![images/ev_10.png](images/ev_10.png)
+![images/ev_11.png](images/ev_11.png)
+![images/ev_12.png](images/ev_12.png)
+![images/ev_13.png](images/ev_13.png)

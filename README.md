@@ -34,6 +34,7 @@ In this case, an URL is istantiated to retrieve more javascript code, to be exec
 The payload is obfuscated thanks to RijindaelManaged, a .NET cryptography module. All the configuration for the cryptor, along with the key, is stored in the code.
 ![images/ev_2.png](images/ev_2.png)
 ![images/ev_3.png](images/ev_3.png)
+After the decryption process, the Powershell script is executed through Wscript.exe
 
 
 # **3rd stage**
